@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap-CSS -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+crossorigin="anonymous">
+<style type="text/css">
+.btn{
+border-radius: 0;
+}
+
+footer {
+  padding: 10px 20px;
+  background: #666;
+  color: white;
+}
+
+.myGallery {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, minmax(50px, 1fr));
+  grid-template-areas:
+  'photo1 photo2 photo3'
+  'photo4 photo5 photo6'
+  'photo7 photo8 photo9';
+  gap: 5px;
+}
+
+figure.column {
+  position: relative;
+}
+
+figure.column:nth-of-type(1) {
+  grid-area: photo1;
+}
+
+figure.column:nth-of-type(2) {
+  grid-area: photo2;
+}
+
+figure.column:nth-of-type(3) {
+  grid-area: photo3;
+}
+
+figure.column:nth-of-type(4) {
+  grid-area: photo4;
+}
+
+figure.column:nth-of-type(5) {
+  grid-area: photo5;
+}
+
+figure.column:nth-of-type(6) {
+  grid-area: photo6;
+}
+
+figure.column:nth-of-type(7) {
+  grid-area: photo7;
+}
+
+figure.column:nth-of-type(8) {
+  grid-area: photo8;
+}
+
+figure.column:nth-of-type(9) {
+  grid-area: photo9;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  background-position: center;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+</style>
+<title>Home</title>
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<header class="mb-auto">
+<div>
+<nav class="nav nav-masthead justify-content-center float-md-end">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+<a class="nav-link" href="overmij.html">Over mij</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="px-3">
+<h1>Welkom op mijn pagina</h1>
+<p class="lead">Mijn passie is mijn paard Kasper! <br>Graag deel ik onderstaande foto's met u</p>
+<div class="myGallery">
+  <figure class="column">
+    <img src="afbeeldingen/foto1.jpg" />
+      </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto4.jpg" />
+      </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto3.jpg" />
+      </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto2.jpg" />
+    </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto7.jpg" />
+  </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto6.jpg" />
+  </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto5.jpg" />
+  </figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto9.jpg" />
+</figure>
+  <figure class="column">
+    <img src="afbeeldingen/foto8.jpg" />
+  </figure>
+</main>
+<footer class="mt-auto text-white-50">
+<p> ©   2022 Esther Zoegard</a>
+</footer>
+</div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+crossorigin="anonymous">
+</script>
+</body>
+</html>
